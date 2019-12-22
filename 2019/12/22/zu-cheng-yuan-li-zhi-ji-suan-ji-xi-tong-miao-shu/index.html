@@ -4,22 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="啦, 明昊的博客">
-    <meta name="description" content="vtufvu
+    <meta name="keywords" content="组成原理之计算机系统描述, 明昊的博客">
+    <meta name="description" content="第一章：计算机系统描述
+1.硬件发展
+第一代：电子管时代
 
-dfchdfghf
+第二代：晶体管时代
 
-姑姑……
+第三代：中小规模集成电路
 
-#include&amp;lt;&amp;gt;
+第四代：超大规模集成电路
 
+冯诺伊曼结构是以运算器为中心，工作方式是按地址访问并顺序执行指令
 
-
-
-
-
-
-">
+辅存必须调用主存后才能被访问
+主存">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +26,7 @@ dfchdfghf
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>啦 | 明昊的博客</title>
+    <title>组成原理之计算机系统描述 | 明昊的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -317,13 +316,13 @@ dfchdfghf
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        啦
+                        组成原理之计算机系统描述
                     </div>
                 </div>
             </div>
@@ -453,7 +452,7 @@ dfchdfghf
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-12-07
+                    2019-12-22
                 </div>
                 
 
@@ -470,20 +469,79 @@ dfchdfghf
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="vtufvu"><a href="#vtufvu" class="headerlink" title="vtufvu"></a>vtufvu</h3><p><img src="1.png" alt=""></p>
-<blockquote>
-<p>dfchdfghf</p>
-</blockquote>
-<p>姑姑……</p>
-<hr>
-<pre><code class="c++">#include&lt;&gt;</code></pre>
-<p><a href=""></a></p>
-<ol>
-<li></li>
-</ol>
+                <h1 id="第一章：计算机系统描述"><a href="#第一章：计算机系统描述" class="headerlink" title="第一章：计算机系统描述"></a><strong>第一章：计算机系统描述</strong></h1><hr>
+<h3 id="1-硬件发展"><a href="#1-硬件发展" class="headerlink" title="1.硬件发展"></a>1.硬件发展</h3><ul>
+<li><p>第一代：电子管时代</p>
+</li>
+<li><p>第二代：晶体管时代</p>
+</li>
+<li><p>第三代：中小规模集成电路</p>
+</li>
+<li><p>第四代：超大规模集成电路</p>
+<p><img src="1.png" alt=""></p>
+<p>冯诺伊曼结构是以运算器为中心，工作方式是按地址访问并顺序执行指令</p>
+<p><img src="2.png" alt=""></p>
+<p>辅存必须调用主存后才能被访问</p>
+<p>主存的工作方式是按存储单元的地址进行存取称为按 地址存取方式</p>
+<p>相联存储器是按内容访问的，也可以按地址</p>
+<p><img src="3.png" alt=""></p>
 <ul>
-<li></li>
+<li><p>运算器                               </p>
+<p>ALU:算术逻辑单元</p>
+<p>ACC：累加器</p>
+<p>MQ：乘商寄存器</p>
+<p>X：操作数寄存器</p>
+</li>
+<li><p>控制器</p>
+<p>PC:程序寄存器<br>IR:指令寄存器</p>
+<p>CU:控制单元</p>
+<hr>
+</li>
 </ul>
+</li>
+</ul>
+<h3 id="2-计算机的工作过程"><a href="#2-计算机的工作过程" class="headerlink" title="2.计算机的工作过程"></a>2.计算机的工作过程</h3><p>取指令：PC-&gt;MAR-&gt;M -&gt;MDR,-IR          分析指令：OP(IR)-&gt;CU</p>
+<p>执行指令：AD(IR) -&gt;MAR-&gt; M -&gt;MDR-&gt; ACC</p>
+<p>读取完后形成下一条指令的地址，(PC)+1-&gt;PC</p>
+<p>(PC)指程序计数器中存放的内容</p>
+<hr>
+<h3 id="3-计算机的多级层次机构"><a href="#3-计算机的多级层次机构" class="headerlink" title="3.计算机的多级层次机构"></a>3.计算机的多级层次机构</h3><p><img src="4.png%5D" alt=""></p>
+<h4 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a><strong>知识点</strong>：</h4><ul>
+<li><p>cpu区分指令和数据的依据是指令周期的不同阶段</p>
+</li>
+<li><p>软件和硬件功能是可以替换的</p>
+</li>
+<li><p>运算器包含状态寄存器，数据总线，不包含地址寄存器</p>
+</li>
+<li><p>寄存器&gt;cache&gt;内存</p>
+</li>
+<li><p>软件和硬件在逻辑上是等效的，不是等价的，</p>
+</li>
+<li><p>系列机的基本特性是指令系统向后兼容</p>
+</li>
+</ul>
+<p>存储程序原理？按此，计算机应有哪些功能</p>
+<p>答：是指将指令以代码的形式事先输入计算机主存储器，然后按在存储器中的</p>
+<p>首地址执行第一条指令，然后按顺序执行其他，直至结束</p>
+<p>数据传送功能，数据存储，数据处理，操作控制，操作判断</p>
+<hr>
+<h3 id="4-计算机的性能指标"><a href="#4-计算机的性能指标" class="headerlink" title="4.计算机的性能指标"></a>4.计算机的性能指标</h3><p> 机器字长：是指计算机进行一次整数运算(即定点整数运算)所能处理的二进制数据的位数</p>
+<p>通常与cpu的寄存器位数，加法器有关。</p>
+<p>计算机字长：通常选定为字节（8）位的整数倍，通常是2，4，8倍。</p>
+<p>数据通路宽带是指数据总线一次所能并行传送信息的位数</p>
+<p>各个子系统通过数据总线连接形成的数据传送路径称为数据通路</p>
+<h4 id="运算速度："><a href="#运算速度：" class="headerlink" title="运算速度："></a>运算速度：</h4><p>（1）吞吐量和响应时间</p>
+<p>（2）主频和cpu时钟周期</p>
+<p>（3）CPI即执行一条指令所需的时钟周期数</p>
+<p>（4）CPU执行时间=CPU时钟周期数/主频=（指令条数*CPI）/主频</p>
+<p>（5）MIPS：每秒执行多少百万条指令。MIPS=指令条数/（执行时间<em>10^6）=主频/CPI</em></p>
+<p>  FLOPS=浮点操作次数/（执行时间<em>10^6） 百万次浮点运算      GFLOPS=浮点操作次数/（执行时间</em>10^9） 十亿次</p>
+<p>  TFLOPS=浮点操作次数/（执行时间*10^12）万亿次</p>
+<p>系统吞吐量主要取决于主存的存取周期</p>
+<p>响应时间：cpu时间，等待时间（磁盘访问，存储器访问，io操作，os开销等）</p>
+<p>cpu时钟周期。通常为节拍脉冲或t周期，即主频的倒数，每个动作至少需要1个</p>
+<p>主频：机器内部主时钟的频率，越高，完成指令的步骤所需时间越短</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="5.png" alt=""></p>
 
             </div>
             <hr/>
@@ -509,7 +567,7 @@ dfchdfghf
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://qinghuazmh.github.io/2019/12/07/la/">https://qinghuazmh.github.io/2019/12/07/la/</a>
+                    <a href="https://qinghuazmh.github.io/2019/12/22/zu-cheng-yuan-li-zhi-ji-suan-ji-xi-tong-miao-shu/">https://qinghuazmh.github.io/2019/12/22/zu-cheng-yuan-li-zhi-ji-suan-ji-xi-tong-miao-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -715,7 +773,7 @@ dfchdfghf
         repo: 'qinghuazmh.github.io',
         owner: 'qinghuazmh',
         admin: "qinghuazmh",
-        id: '2019-12-07T09-38-51',
+        id: '2019-12-22T11-19-33',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -736,9 +794,10 @@ dfchdfghf
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2019/12/22/zu-cheng-yuan-li-zhi-ji-suan-ji-xi-tong-miao-shu/">
                     <div class="card-image">
@@ -769,9 +828,9 @@ dfchdfghf
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -780,6 +839,7 @@ dfchdfghf
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -790,24 +850,38 @@ dfchdfghf
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/12/06/hello-world/">
+                <a href="/2019/12/07/la/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="啦">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">啦</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            vtufvu
+
+dfchdfghf
+
+姑姑……
+
+#include&lt;&gt;
+
+
+
+
+
+
+
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-07
                             </span>
                         <span class="publish-author">
                             
